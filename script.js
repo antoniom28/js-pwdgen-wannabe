@@ -10,10 +10,10 @@ let coloreUtente = prompt('Il tuo colore preferito');
 while(coloreUtente.length === 0)
     coloreUtente = prompt('Errore! Devi inserire il tuo colore preferito');
 
-let numeroPassword = nomeUtente.length + cognomeUtente.length + coloreUtente.length;
-document.writeln('Password generata : ' + nomeUtente + cognomeUtente + coloreUtente + numeroPassword);
+document.writeln('Password generata : ' + nomeUtente + cognomeUtente + coloreUtente + '21');
 
 let generaPassword = nomeUtente.slice(0,(nomeUtente.length/2) + .5) 
 + cognomeUtente.slice(0,(cognomeUtente.length/2) + .5);
 
+const numeroPassword = 21;
 document.writeln('<br> Password Consigliata : ' + generaPassword + coloreUtente + numeroPassword);
